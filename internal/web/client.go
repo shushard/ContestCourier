@@ -7,8 +7,8 @@ import (
 	"log/slog"
 	"net/http"
 
-	"tester/internal/common/web/config"
-	"tester/pkg/utils"
+	"github.com/shushard/ContestCourier/internal/web/config"
+	"github.com/shushard/ContestCourier/pkg/utils"
 )
 
 type Client struct {

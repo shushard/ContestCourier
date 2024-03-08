@@ -6,9 +6,8 @@ import (
 	"log/slog"
 	"sync"
 
-	"tester/internal/common/telegram/config"
-
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
+	"github.com/shushard/ContestCourier/internal/telegram/config"
 )
 
 const ServiceName = "TGBot"

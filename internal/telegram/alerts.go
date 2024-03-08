@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"io"
 
-	"tester/internal/metrics"
-
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
@@ -102,12 +100,5 @@ func (b *Bot) sendAlertToChat(alert alertInfo, chatID int64) {
 		"chatID", chatID,
 		"alert", alert,
 		"error", err,
-	)
-	metrics.IncError(ServiceName,
-		fmt.Errorf("can't send alert=%v to chatID=%d: %w",
-			alert,
-			chatID,
-			err,
-		),
 	)
 }
